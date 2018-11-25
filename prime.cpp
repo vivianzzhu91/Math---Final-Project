@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 
@@ -37,9 +38,9 @@ string ConvertBinary(int n)
     return r;
 }
 int main(){
-    ofstream outputf("output_prime.txt");
+    ofstream outputf("output_prime_2^17.txt");
     outputf << '0';
-    for (int i =0;i<100;i++){
+    for (int i =0;i<pow(2,17);i++){
         if (isPrime(i) == true){
             string num;
             num = ConvertBinary(i);

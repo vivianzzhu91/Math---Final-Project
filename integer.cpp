@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string.h>
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 string ConvertBinary(int n)
@@ -23,12 +24,12 @@ string ConvertBinary(int n)
 }
 
 int main(){
-    ofstream outputfile("output.txt");
+    ofstream outputfile("output_2^17.txt");
     outputfile << '0';
-    for (int i =0;i<=100;i++){
+    for (int i =0;i<=pow(2,17);i++){
         string line;
         line = ConvertBinary(i);
-        outputfile << output;
+        outputfile << line;
     }
     return 0;
 }

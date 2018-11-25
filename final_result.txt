@@ -1,0 +1,1 @@
+reuslt for integer 2^7: z < 0.000733538, p = 0.500293
