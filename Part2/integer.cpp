@@ -24,9 +24,9 @@ string ConvertBinary(int n)
 }
 
 int main(){
-    ofstream outputfile("output_2^17.txt");
+    ofstream outputfile("output_2^5.txt");
     outputfile << '0';
-    for (int i =0;i<=pow(2,17);i++){
+    for (int i =0;i<=pow(2,5);i++){
         string line;
         line = ConvertBinary(i);
         outputfile << line;

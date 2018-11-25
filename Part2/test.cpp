@@ -16,7 +16,7 @@ int main(int argc, char* argv[]){
 
 	int n1 = 0;
 	int n2 = 0;
-	int run = 0;
+	int run = 1;
 
 	for(size_t i = 0; i < num.length(); i ++){
 		if(i >0 && num[i] != num[i-1]){
@@ -30,11 +30,12 @@ int main(int argc, char* argv[]){
 		}
 	}
 
-	float mean = (float)(2*n1*n2) / (float)(n1+n2);
-	float variance = (float) (2*n1*n2) * (2*n1*n2 - n1 - n2) / (float) (pow(n1+n2,2)) * float(n1+n2-1);
-	float zvalue = (float)(run - mean + 0.5) / (float) (pow(variance, 0.5));
+	double mean = ((double)(2*n1*n2) / (double)(n1+n2) )+1;
+	double variance = (double) (2*n1*n2) * (double)(2*n1*n2 - n1 - n2) /( (double) (pow(n1+n2,2)) * (double)(n1+n2-1));
+	double zvalue = (double)(run - mean + 0.5) / (double) (pow(variance, 0.5));
 
 	ofstream outputf("result.txt");
+	// cout<<n1<<" "<<n2<endl;
 	outputf << mean;
 	outputf << endl;
 	outputf << variance;
@@ -42,6 +43,10 @@ int main(int argc, char* argv[]){
 	outputf << run;
 	outputf << endl;
 	outputf << zvalue;
+	outputf << endl;
+	outputf << n1;
+	outputf << endl;
+	outputf << n2;
 	outputf << endl;
 
 
