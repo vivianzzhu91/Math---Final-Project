@@ -1,2 +1,6 @@
 
 .DS_Store
+*.iml
+Part2/.idea/vcs.xml
+Part2/cmake-build-debug
+Part2/.idea
