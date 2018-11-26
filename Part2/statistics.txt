@@ -1,0 +1,75 @@
+all int
+
+2^5
+n1:	81
+n2:	55
+Mean:	66
+Variance:	31.3086
+Run Num:	68
+Z-Value:	0.446795
+
+7
+n1:	449
+n2:	329
+Mean:	380
+Variance:	185.105
+Run Num:	388
+Z-Value:	0.624754
+
+10
+n1:	5121
+n2:	4108
+Mean:	4559
+Variance:	2251.74
+Run Num:	4612
+Z-Value:	1.12744
+
+12
+n1:	24577
+n2:	20494
+Mean:	22351
+Variance:	11083.3
+Run Num:	22532
+Z-Value:	1.72402
+
+prime
+
+5
+n1:	33
+n2:	12
+Mean:	18
+Variance:	6.64
+Run Num:	18
+Z-Value:	0.194038
+
+7
+n1:	118
+n2:	60
+Mean:	80
+Variance:	35.3036
+Run Num:	76
+Z-Value:	-0.589058
+
+10
+n1:	923
+n2:	576
+Mean:	710
+Variance:	335.414
+Run Num:	674
+Z-Value:	-1.93838
+
+12
+n1:	3598
+n2:	2468
+Mean:	2928
+Variance:	1412.83
+Run Num:	2780
+Z-Value:	-3.92417
+
+13
+n1:	7072
+n2:	5026
+Mean:	5876
+Variance:	2853.72
+Run Num:	5582
+Z-Value:	-5.49418

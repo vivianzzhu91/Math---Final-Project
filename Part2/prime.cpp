@@ -38,10 +38,12 @@ string ConvertBinary(int n)
     return r;
 }
 int main(){
-    ofstream outputf("output_prime_2^17.txt");
+	int power=13;
+	string filename="output_prime_2^"+to_string(power)+".txt";
+    ofstream outputf(filename);
     outputf << '0';
-    for (int i =0;i<pow(2,17);i++){
-        if (isPrime(i) == true){
+    for (int i =0;i<pow(2,power);i++){
+        if (isPrime(i)){
             string num;
             num = ConvertBinary(i);
             outputf << num;
