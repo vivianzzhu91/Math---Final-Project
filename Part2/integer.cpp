@@ -24,13 +24,13 @@ string ConvertBinary(int n)
 }
 
 int main(){
-	int power=13;
+	int power=4;
 	string filename="output_2^"+to_string(power)+".txt";
     ofstream outputfile(filename);
     outputfile << '0';
     for (int i =0;i<=pow(2,power);i++){
-        string line;
-        line = ConvertBinary(i);
+        string line=ConvertBinary(i);
+        std::reverse(line.begin(),line.end());
         outputfile << line;
     }
     return 0;
