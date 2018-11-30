@@ -31,13 +31,6 @@ int main(){
     for (int i =0;i<=pow(2,power);i++) {
 	    string line = ConvertBinary(i);
 	    std::reverse(line.begin(), line.end());
-    }
-	string filename="output_10^"+to_string(4)+".txt";
-    ofstream outputfile(filename);
-    outputfile << '0';
-    for (int i =0;i<=pow(10,power);i++){
-        string line;
-        line = ConvertBinary(i);
         outputfile << line;
     }
     return 0;
