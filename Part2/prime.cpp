@@ -25,17 +25,18 @@ bool isPrime(int num){
 
 string ConvertBinary(int n)
 {
-    string r;
-    while(n!=0) {
-        if(n%2 == 0){
-            r += "0";
-        }
-        else{
-            r += "1";
-        }
-        n/=2;
-    }
-    return r;
+	string r;
+	while(n!=0) {
+		if(n%2 == 0){
+			r += "0";
+		}
+		else{
+			r += "1";
+		}
+		n/=2;
+	}
+	std::reverse(r.begin(), r.end());
+	return r;
 }
 int main(){
 	int power=4;

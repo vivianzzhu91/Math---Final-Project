@@ -20,6 +20,7 @@ string ConvertBinary(long long n)
         }
         n/=2;
     }
+	std::reverse(r.begin(), r.end());
     return r;
 }
 
@@ -29,13 +30,12 @@ void output(int power){
 	outputfile << '0';
 	for (int i =0;i<=pow(2,power);i++) {
 		string line = ConvertBinary(i);
-		std::reverse(line.begin(), line.end());
 		outputfile << line;
 	}
 }
 
 int main(){
-	for (int i = 0; i < 18; ++i) {
+	for (int i = 0; i < 5; ++i) {
 		output(i);
 	}
 	
