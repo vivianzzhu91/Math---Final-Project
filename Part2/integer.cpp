@@ -24,11 +24,11 @@ string ConvertBinary(int n)
 }
 
 int main(){
-	int power=13;
-	string filename="output_2^"+to_string(power)+".txt";
+	int power=4;
+	string filename="output_10^"+to_string(4)+".txt";
     ofstream outputfile(filename);
     outputfile << '0';
-    for (int i =0;i<=pow(2,power);i++){
+    for (int i =0;i<=pow(10,power);i++){
         string line;
         line = ConvertBinary(i);
         outputfile << line;
