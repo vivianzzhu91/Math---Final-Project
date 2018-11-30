@@ -38,18 +38,36 @@ string ConvertBinary(int n)
 	std::reverse(r.begin(), r.end());
 	return r;
 }
+
+void generate_prime_base10(int power){
+	string filename="output_prime_10^"+to_string(power)+".txt";
+	ofstream outputf(filename);
+	outputf << '0';
+	for (int i =0;i<pow(10,power);i++){
+		if (isPrime(i)){
+			string num;
+			num = ConvertBinary(i);
+			outputf << num;
+		}
+	}
+}
+
+void generate_prime_base2(int power){
+	string filename="output_prime_2^"+to_string(power)+".txt";
+	ofstream outputf(filename);
+	outputf << '0';
+	for (int i =0;i<pow(2,power);i++){
+		if (isPrime(i)){
+			string num;
+			num = ConvertBinary(i);
+			outputf << num;
+		}
+	}
+}
+
 int main(){
-	int power=4;
-	string filename="output_prime_10^"+to_string(4)+".txt";
-    ofstream outputf(filename);
-    outputf << '0';
-    for (int i =0;i<pow(10,power);i++){
-        if (isPrime(i)){
-            string num;
-            num = ConvertBinary(i);
-            outputf << num;
-        }
-    }
-    return 0;
+	for (int i = 0; i < 18; ++i) {
+		generate_prime_base2(i);
+	}
 }
 

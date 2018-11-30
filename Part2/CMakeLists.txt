@@ -4,7 +4,7 @@ project(Part2)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(Part2
-        integer.cpp
-#        prime.cpp
+#        integer.cpp
+        prime.cpp
 #        test.cpp
         )

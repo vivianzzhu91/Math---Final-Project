@@ -24,7 +24,7 @@ string ConvertBinary(long long n)
     return r;
 }
 
-void output(int power){
+void output_base2(int power){
 	string filename="output_2^"+to_string(power)+".txt";
 	ofstream outputfile(filename);
 	outputfile << '0';
@@ -34,9 +34,19 @@ void output(int power){
 	}
 }
 
+void output_base10(int power){
+	string filename="output_10^"+to_string(power)+".txt";
+	ofstream outputfile(filename);
+	outputfile << '0';
+	for (int i =0;i<=pow(10,power);i++) {
+		string line = ConvertBinary(i);
+		outputfile << line;
+	}
+}
+
 int main(){
 	for (int i = 0; i < 5; ++i) {
-		output(i);
+		output_base2(i);
 	}
 	
 	// int power=4;
